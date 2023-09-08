@@ -130,3 +130,4 @@ dist
 .pnp.*
 #Secret directory
 config.js
+.vercel

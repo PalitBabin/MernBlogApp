@@ -1,6 +1,6 @@
 import Login from "./Components/account/Login";
 import DataProvider from "./context/DataProvider";
-import Home from "./Components/Home/home";
+import Home from "./Components/Home/Home";
 import {BrowserRouter,Routes,Route, Navigate, Outlet,} from 'react-router-dom'
 import Header from "./Components/Header/Header";
 import { useState } from "react";
