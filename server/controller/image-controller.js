@@ -1,5 +1,8 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
+import dotenv from "dotenv";
+
+dotenv.config();
 
 let gfs,gridfsBucket;
 const conn = mongoose.connection;
