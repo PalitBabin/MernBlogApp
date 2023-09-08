@@ -11,7 +11,7 @@ conn.once('open',()=>{
     gfs.collection('photos');
 })
 
-const URL = 'http://localhost:8000';
+const URL = process.env.BASE_URL;
 export const uploadImage = (req,res)=>{
         if(!req.file){
             return res.status(404).json({msg:'file not found'});
