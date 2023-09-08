@@ -1,15 +1,19 @@
 import {Box,styled} from '@mui/material'
 
-const Image = styled(Box)`
-background:url(banner2.png) center/100% repeat-x;
-background-color:#ffffff;
-width:100%;
-height:50vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-`
+const Image = styled(Box)(({theme})=>({
+    background:"url(banner2.png) center/100% repeat-x",
+    backgroundColor:"#ffffff",
+    width:"100%",
+    height:"50vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    [theme.breakpoints.down('md')]:{
+        backgroundSize:"cover",
+    }
+}));
+
 const Banner = ()=>{
     return (
         <Image></Image>
